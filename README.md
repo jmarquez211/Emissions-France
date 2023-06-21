@@ -1,7 +1,7 @@
 # Emissions-France
 Streamlit Web App
 
-All the information can be found on GReport file.
+All the information can be found on Report file.
 
 The datasets df_r and data2019_r1 are cleaned and processed. The original dataset can be found here:
 
