@@ -36,7 +36,7 @@ def run():
                 ''')
     
     df = pd.read_csv('Emissions1/tabs/df_r.csv')
-    df = df.sample(frac=0.3)
+    df = df.sample(frac=0.1)
     target = df['Ewltp (g/km)']
     feats = df.drop('Ewltp (g/km)', axis=1)
     
@@ -79,8 +79,10 @@ def run():
     st.plotly_chart(fig_ridge)
     
     st.markdown(''' 
-                The higher the value of alpha, the higher the total error.
-                The optimal parameter here is $\\alpha$ = 5. This is the one that gives the smallest RMSE error.
+                The higher the value of alpha, the higher the total error. We need to consider in this file
+                we are using 10% of the data, because in other way it would take to much time to run the app. 
+                So the graph is made considering this limitation.
+                The optimal parameter is $\\alpha$ = 5, whee we use 100% of data. This is the one that gives the smallest RMSE error.
 
                 ''')
     
