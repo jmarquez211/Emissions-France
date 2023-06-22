@@ -36,7 +36,7 @@ def run():
                 ''')
     
     df = pd.read_csv('Emissions1/tabs/df_r.csv')
-    df = df.sample(frac=0.5)
+    df = df.sample(frac=0.3)
     target = df['Ewltp (g/km)']
     feats = df.drop('Ewltp (g/km)', axis=1)
     
