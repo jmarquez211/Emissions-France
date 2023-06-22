@@ -32,7 +32,7 @@ def run():
     
     st.write('---')
     
-    df = pd.read_csv('df_r.csv')
+    df = pd.read_csv('Emissions1/tabs/df_r.csv')
     #df_r is the data set clean and preprocessed
     #df = df.sample(frac=0.7, random_state=42)
     target = df['Ewltp (g/km)']
@@ -156,7 +156,7 @@ def run():
     ec_min, ec_max = 0, 5038
     ep_min, ep_max = 0, 471
     mt_min, mt_max = 0, 2814
-    fc_min, fc_max = 0.0,8.0
+    fc_min, fc_max = 0.0,57.0
     ft_pmin, ft_pmax = 0,1
 
     # sliders for selecting the values
@@ -188,6 +188,7 @@ def run():
         st.write('Prediction of emissions Ewltp (g/km):', formatted_emissions)
     
     st.write('---')
+    st.write('The maximum values for the slider are not random. They are the real maximum values in the dataset')
     
     
     
