@@ -25,7 +25,7 @@ def run():
     st.subheader('CO2 emissions dataset')
     
     
-    df = pd.read_csv('data2019_r1')
+    df = pd.read_csv('tabs/data2019_r1.csv')
     df = df.sample(frac=0.04)
     st.write(df.head())
     
