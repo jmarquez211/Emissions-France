@@ -424,7 +424,7 @@ def run():
                 to the regularization in Europe.
                 ''')
     
-    data = pd.read_csv('data2019_r1.csv')
+    data = pd.read_csv('Emissions1/tabs/data2019_r1.csv')
     data = data.sample(frac=0.1)
     #Let's clean it as we did it before
     NaN_percentage = (data.isnull().sum()/data.isnull().count()*100).sort_values(ascending = False)
