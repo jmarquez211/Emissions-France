@@ -463,7 +463,11 @@ def run():
     st.write(fig_cls)
     st.markdown(''' The label 'A' corresponds to the the lowest value of emission. If a car is classified with
                 that label, the emissions (g/km) are less than 100. The label 'F' corresponds 
-                to 500 (g/km) emissions.''')
+                to 500 (g/km) emissions.
+                
+                We conclude that France is conscious of the pollution and this country obey the european regulations. The 
+                emissions of their cars are under the limit.
+                ''')
     
     
 
