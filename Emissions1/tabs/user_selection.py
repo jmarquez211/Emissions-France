@@ -32,7 +32,7 @@ def run():
     
     st.write('---')
     
-    df = pd.read_csv('tabs/df_r.csv')
+    df = pd.read_csv('df_r.csv')
     #df_r is the data set clean and preprocessed
     #df = df.sample(frac=0.7, random_state=42)
     target = df['Ewltp (g/km)']
