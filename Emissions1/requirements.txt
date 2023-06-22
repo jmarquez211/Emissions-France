@@ -34,7 +34,7 @@ ipython @ file:///C:/b/abs_d1yx5tjhli/croot/ipython_1680701887259/work
 ipywidgets @ file:///C:/b/abs_5awapknmz_/croot/ipywidgets_1679394824767/work
 jedi @ file:///C:/ci_311/jedi_1679427407646/work
 Jinja2 @ file:///C:/ci_311/jinja2_1676424968965/work
-joblib @ file:///home/conda/feedstock_root/build_artifacts/joblib_1663332044897/work
+joblib==1.1.2
 jsonschema @ file:///C:/b/abs_d40z05b6r1/croot/jsonschema_1678983446576/work
 jupyter_client @ file:///C:/b/abs_059idvdagk/croot/jupyter_client_1680171872444/work
 jupyter_core @ file:///C:/b/abs_9d0ttho3bs/croot/jupyter_core_1679906581955/work
