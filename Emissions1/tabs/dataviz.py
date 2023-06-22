@@ -25,7 +25,7 @@ def run():
     st.subheader('CO2 emissions dataset')
     
     
-    df = pd.read_csv('tabs/data2019_r1.csv')
+    df = pd.read_csv('data2019_r1.csv')
     df = df.sample(frac=0.04)
     st.write(df.head())
     
@@ -323,40 +323,7 @@ def run():
                 ''')
     
     
-    
 
-    '''
-    This graph isn't necessary indeed
-    
-    
-    # This commnad is used for the palette of colors for the countries
-    colors = px.colors.qualitative.Plotly
-
-    # list of countries to plot
-    traces = []
-    countries = ['France', 'Spain', 'Germany', 'Italy','United Kingdom']  #Include any country
-
-    for i, country in enumerate(countries):
-        df_country = df[df['Country'] == country]
-        trace = go.Box(
-            x=df_country['Country'],
-            y=df_country['Annual emissions'],
-            name=country,
-            marker=dict(color=colors[i % len(colors)])  # this assigns the color for each country
-        )
-        traces.append(trace)
-
-    # Creating the figure and changing the title
-    fig_EU = go.Figure(data=traces)
-    fig_EU.update_layout(
-        title='Distribution of CO2 emissions by country in UE',
-        xaxis_title='Country',
-        yaxis_title='Annual CO2 emissions'
-    )
-    
-    # the graph
-    st.plotly_chart(fig_EU)
-    '''
     
     st.markdown(''' 
                 
@@ -457,7 +424,7 @@ def run():
                 to the regularization in Europe.
                 ''')
     
-    data = pd.read_csv('tabs/data_2019.csv')
+    data = pd.read_csv('data2019_r1.csv')
     data = data.sample(frac=0.1)
     #Let's clean it as we did it before
     NaN_percentage = (data.isnull().sum()/data.isnull().count()*100).sort_values(ascending = False)
