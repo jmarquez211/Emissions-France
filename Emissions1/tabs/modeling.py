@@ -1,4 +1,4 @@
-simport streamlit as st, pandas as pd, numpy as np
+import streamlit as st, pandas as pd, numpy as np
 
 from sklearn.model_selection import train_test_split, cross_val_score, cross_validate
 from sklearn.linear_model import Ridge, LassoCV
