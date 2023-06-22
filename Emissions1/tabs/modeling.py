@@ -35,7 +35,7 @@ def run():
                 Continue with the models, we are going to display the performance of each model.
                 ''')
     
-    df = pd.read_csv('tabs/df_r.csv')
+    df = pd.read_csv('df_r.csv')
     df = df.sample(frac=0.5)
     target = df['Ewltp (g/km)']
     feats = df.drop('Ewltp (g/km)', axis=1)
