@@ -25,9 +25,6 @@ def run():
                 
                 ''')
     
-    df = pd.read_csv('tabs/df_r.csv',low_memory=False)
-    df = df.sample(frac=0.1)
-    df.dropna()
     
     st.header('What is it shap?')
     st.markdown('''
