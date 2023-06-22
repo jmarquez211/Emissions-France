@@ -183,10 +183,6 @@ def run():
     )
     
  
-    
-
-    
-    #df['Mk'] = df['Mk'].astype(str)
 
     
     
@@ -197,6 +193,18 @@ def run():
     
     
     st.write(figbox)
+
+    st.markdown('''
+                The group General includes the brands: 'VOLKSWAGEN', 'PEUGEOT', 'RENAULT', 'SKODA', 'CITROEN', 
+                                           'OPEL', 'DACIA', 'TOYOTA','FORD', 'SEAT', 'MINI', 'KIA',
+                                          'HYUNDAI', 'FIAT', 'SUZUKI', 'NISSAN', 'MAZDA', 'MITSUBISHI',
+                                          'DS', 'HONDA', 'ALFA ROMEO', 'ŠKODA', 'SUBARU', 'ALPINE',
+                                          'API CZ', 'KEAT'.
+                                          
+                The group Luxury are for: 'BMW', 'AUDI', 'MERCEDES-BENZ', 'PORSCHE', 
+                                           'CUPRA', 'JEEP', 'LAND ROVER','LEXUS', 'JAGUAR'.
+
+    ''')
     
     st.write('---')
     
