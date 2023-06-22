@@ -42,7 +42,10 @@ TABS = OrderedDict(
 
 
 def run():
-   
+   st.sidebar.image(
+        "Emissions1/CO2.png",
+        width=200,
+    )
     
     tab_name = st.sidebar.radio("", list(TABS.keys()),0)
     st.sidebar.markdown("---")
