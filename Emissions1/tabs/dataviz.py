@@ -208,7 +208,7 @@ def run():
                 in billions of tons.
                 ''')
     
-    df = pd.read_csv('tabs/annual-share-of-co2-emissions.csv')
+    df = pd.read_csv('Emissions/tabs/annual-share-of-co2-emissions.csv')
     
     df.rename({'Entity':'Country'},axis=1, inplace=True)
     
