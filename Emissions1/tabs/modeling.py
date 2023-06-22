@@ -1,4 +1,4 @@
-import streamlit as st, pandas as pd, numpy as np
+simport streamlit as st, pandas as pd, numpy as np
 
 from sklearn.model_selection import train_test_split, cross_val_score, cross_validate
 from sklearn.linear_model import Ridge, LassoCV
@@ -29,13 +29,13 @@ def run():
                 Ridge regression adds a penalty term to the loss function using L2 regularization. It shrinks the coefficients towards 
                 zero without forcing them to be exactly zero.
                 
-                ''')
+                ''') 
     
     st.markdown('''
                 Continue with the models, we are going to display the performance of each model.
                 ''')
     
-    df = pd.read_csv('df_r.csv')
+    df = pd.read_csv('Emissions1/tabs/df_r.csv')
     df = df.sample(frac=0.5)
     target = df['Ewltp (g/km)']
     feats = df.drop('Ewltp (g/km)', axis=1)
@@ -213,7 +213,8 @@ def run():
     st.write('---')
     st.markdown('''
                 To sump up, both models are great to make predictions in this dataset. We select Ridge
-                because it has more precision than Lasso, although it is only slightly better.
+                because it has more precision than Lasso, although it is only slightly better, this model is 
+                better for dataset that have several features correlated and that can be important, almost most of them.
                 
                 ''')
     
