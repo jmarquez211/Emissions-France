@@ -135,8 +135,8 @@ def run():
     
     
     
-    fig_scatter = px.scatter(df1,x=df1['ep (KW)'],y=df1['Ewltp (g/km)'],
-                             color=df1['Ewltp (g/km)'])
+    fig_scatter = px.scatter(df,x=df['ep (KW)'],y=df['Ewltp (g/km)'],
+                             color=df['Ewltp (g/km)'])
     st.write(fig_scatter)
     
     st.write('---')
