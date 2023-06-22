@@ -426,16 +426,7 @@ def run():
     
     data = pd.read_csv('Emissions1/tabs/data2019_r1.csv')
     data = data.sample(frac=0.1)
-    #Let's clean it as we did it before
-    NaN_percentage = (data.isnull().sum()/data.isnull().count()*100).sort_values(ascending = False)
-
-    drop_list = sorted(list(NaN_percentage[NaN_percentage > 70].index))
-    data.drop(labels=drop_list, axis=1, inplace=True)
-    #Replacing Nans with Median in Numerical features
-    data.fillna(data.median(numeric_only=None), inplace=True)
-    #Dropping the rest of all missing values since they are in categorical features. We do not want to 
-    # use the mode since NaN could be the most occuring variable.
-    data.dropna(inplace=True)
+    
     
     European_Classification = pd.cut(x = data['Ewltp (g/km)'],
                  bins = [100, 120, 140, 160, 200, 250, 500,700],
@@ -467,13 +458,4 @@ def run():
                 to 500 (g/km) emissions.''')
     
     
-    '''
-    df['Mk1'] = df['Mk'].replace(['BMW', 'AUDI', 'MERCEDES-BENZ', 'PORSCHE', 
-                                           'CUPRA', 'JEEP', 'LAND ROVER','LEXUS', 'JAGUAR'],'Luxury')
-    
-    df['Mk1'] = df['Mk1'].replace(['VOLKSWAGEN', 'PEUGEOT', 'RENAULT', 'SKODA', 'CITROEN', 
-                                           'OPEL', 'DACIA', 'TOYOTA','FORD', 'SEAT', 'MINI', 'KIA',
-                                          'HYUNDAI', 'FIAT', 'SUZUKI', 'NISSAN', 'MAZDA', 'MITSUBISHI',
-                                          'DS', 'HONDA', 'ALFA ROMEO', 'ŠKODA', 'SUBARU', 'ALPINE',
-                                          'API CZ', 'KEAT'],'General')
-   '''
+
