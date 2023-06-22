@@ -114,9 +114,9 @@ def run():
     
     # Now we can use only the principal features to predict emissions
     
-    data = pd.read_csv('tabs/df_r.csv', na_values=['-', 'N/A', 'NaN'])
-    data = pd.read_csv('tabs/df_r.csv', keep_default_na=False)
-    data = pd.read_csv('tabs/df_r.csv', usecols=['m (kg)', 'Mt', 'W (mm)', 'ec (cm3)', 'year',
+    data = pd.read_csv('Emissions1/tabs/df_r.csv', na_values=['-', 'N/A', 'NaN'])
+    data = pd.read_csv('Emissions1/tabs/df_r.csv', keep_default_na=False)
+    data = pd.read_csv('Emissions1/tabs/df_r.csv', usecols=['m (kg)', 'Mt', 'W (mm)', 'ec (cm3)', 'year',
                                                       'Fuel consumption ','ep (KW)', 'Ewltp (g/km)'])
     data.rename({'Fuel consumption':'Consumption'},axis=1,inplace=True)
     
