@@ -54,7 +54,7 @@ def run():
     
     st.markdown('With this information, it is time to show what features have more impact on the emissions')
     
-    st.image('shap values.png')
+    st.image('Emissions1/tabs/shap values.png')
     st.markdown('''
                 The graph above show the impact of each feature to the target. 
                 The color red indicates that it has important impact on the emissions, while the color
@@ -69,7 +69,7 @@ def run():
                 ''')
     
     st.write('---')
-    st.image('shap1.png')
+    st.image('Emissions1/tabs/shap1.png')
 
     st.markdown('''
                 According to the next figure, we can see the summary plot to see the importance of the variables 
