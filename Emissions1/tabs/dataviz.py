@@ -25,18 +25,8 @@ def run():
     st.subheader('CO2 emissions dataset')
     
     
-    df = pd.read_csv('data_2019.csv')
-    df = df.sample(frac=0.03)
-    df1 = pd.read_csv('tabs/df_r.csv')
-    
-    nan_percentage = (df.isnull().sum()/df.isnull().count()*100).sort_values(ascending = False)
-    drop_list=sorted(list(nan_percentage[nan_percentage > 70].index))
-        
-    df.drop(labels=drop_list, axis=1,inplace=True)
-        
-    df.fillna(df.median(numeric_only=None), inplace=True)
-        
-    df.dropna(inplace=True)
+    df = pd.read_csv('tabs/data2019_r1.csv')
+    df = df.sample(frac=0.04)
     st.write(df.head())
     
     st.markdown('''
