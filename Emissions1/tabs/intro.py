@@ -8,7 +8,7 @@ def run():
     st.markdown('<style> section[tabindex="0"] div[data-testid="stVerticalBlock"] > div:nth-child(3) div[data-testid="stImage"] {border-top: 8px solid var(--red-color); border-right: 8px solid var(--red-color); border-top-right-radius: 23px; margin: auto;} section[tabindex="0"] div[data-testid="stVerticalBlock"] div[data-testid="stImage"] > img {border-top-right-radius: 15px;} section[tabindex="0"] div[data-testid="stVerticalBlock"] > div:nth-child(3) button[title="View fullscreen"] {display: none;} section[tabindex="0"] div[data-testid="stVerticalBlock"] div[data-testid="stImage"] {border-top: 3px solid var(--red-color); border-right: 3px solid var(--red-color); border-top-right-radius: 18px; margin: auto;}</style>', unsafe_allow_html=True)
     
     st.title('Predicting CO2 emissions')
-    st.image('car.png')
+    st.image('tabs/car emission.png')
     
     st.header('Emissions of cars in France in 2019')
     
